@@ -1,0 +1,931 @@
+@font-face{src: url('font/Gotham/gotham-bold.ttf'); font-family: 'gbold';}
+@font-face{src: url('font/Gotham/gotham-book.ttf'); font-family: 'gbook';}
+@font-face{src: url('font/Gotham/gotham-medium.ttf'); font-family: 'gmedium';}
+@font-face{src: url('font/Open_Sans/OpenSans-Bold.ttf'); font-family: 'obold';}
+@font-face{src: url('font/Open_Sans/OpenSans-Regular.ttf'); font-family: 'opensans';}
+@font-face{src: url('font/Roboto/Roboto-Regular.ttf'); font-family: 'roboto';}
+@font-face{src: url('font/Roboto_Condensed/RobotoCondensed-bold.ttf'); font-family: 'rbold';}
+
+*{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+
+body{
+	font-size: 16px;
+}
+
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.col-2{
+	width: 16.66%;
+	float: left;
+}
+
+.col-3{
+	width: 25%;
+	float: left;
+}
+
+.col-4{
+	width: 33.33%;
+	float: left;
+}
+
+.col-6{
+	width: 50%;
+	float: left;
+}
+
+.col-9{
+	width: 75%;
+	float: left;
+}
+
+.col-10{
+	width: 83.33%;
+	float: left;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  display: none;
+}
+
+.tetap{
+	z-index: 99;
+	position: fixed;
+	top: -5px;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	padding: 10px;
+	background: rgba(0, 0, 0, .8);
+}
+
+header{
+	background: url('Images/01.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 672px;
+}
+
+header .header-content{
+	padding-top: 20px;
+}
+
+header .nav-collapse{
+	padding: 0;
+}
+
+header .header-content .logo{
+	float: left;
+}
+
+header .header-content .logo img{
+	width: 50px;
+}
+
+header .header-content .nav-collapse{
+	float: right;
+}
+
+header .topnav{
+	list-style: none;
+}
+
+header .topnav li{
+	display: inline-block;
+}
+
+header .topnav .icon{
+	display: none;
+}
+
+header .nav-collapse a{
+	color: #F5F5F5;
+	text-decoration: none;
+	font-family: 'roboto';
+	font-size: 1em;
+	padding: 20px 12px;
+	margin: 0 5px;
+}
+
+header .nav-collapse a:hover{
+	border-bottom: solid 3px #11749E;
+}
+
+header .nav-collapse .social:hover{
+	color: #11749E;
+	border: none;
+}
+
+header .content{
+	clear: both;
+	margin-top: 180px;
+}
+
+header .content h1{
+	font-family: 'gbold';
+	text-transform: uppercase;
+	color: #F5F5F5;
+	font-size: 7em;
+	text-align: center;
+}
+
+header .content h3{
+	font-family: 'gmedium';
+	text-transform: uppercase;
+	color: #11749E;
+	font-size: 0.95em;
+	text-align: center;
+}
+
+section .agency{
+	clear: both;
+	background: #11749E;
+	width: 100%;
+	height: 500px;
+}
+
+section .agency .heading{
+	padding-top: 75px;
+}
+
+section .agency .col-3{
+	margin-top: 75px;
+}
+
+section .agency .icon{
+	border: solid 1px #11749E;
+	border-radius: 100%;
+	background: #FFF;
+	opacity: 0.2;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	color: #000;
+	font-size: 2em;
+	margin-left: 30%;
+}
+
+section .agency i{
+	padding-top: 35px;
+}
+
+section .agency h2{
+	font-family: 'gmedium';
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+	opacity: 0.9;
+}
+
+section .agency .title{
+	margin-top: 25px;
+}
+
+section .agency h3{
+	font-family: 'gmedium';
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 1em;
+	text-align: center;
+	opacity: 0.8;
+}
+
+section .agency p{
+	margin-top: 15px;
+	color: #FFF;
+	opacity: 0.8;
+}
+
+section .news .news1{
+	background: #222222;
+	width: 100%;
+	height: 340px;
+}
+
+section .news .news2{
+	height: 340px;
+	clear: both;
+}
+
+section .news img{
+	width: 100%;
+	height: 340px;
+}
+
+section .news .news2 img{
+	position: relative;
+	bottom: 4px;
+}
+
+section .news .news1 .date{
+	font-family: 'gbook';
+	color: #FFF;
+	font-size: 0.8em;
+	margin-top: 50px;
+}
+
+section .news .news2 .date{
+	font-family: 'gbook';
+	color: #000;
+	font-size: 0.8em;
+	margin-top: 50px;
+}
+
+section .news .news1 h3{
+	font-family: 'gmedium';
+	color: #FFF;
+	text-transform: uppercase;
+	opacity: 0.8;
+	font-size: 1.5em;
+	margin-top: 15px;
+}
+
+section .news .news2 h3{
+	font-family: 'gmedium';
+	color: #000;
+	text-transform: uppercase;
+	opacity: 0.9;
+	font-size: 1.5em;
+	margin-top: 15px;
+}
+
+section .news .news1 p{
+	font-family: 'gbook';
+	color: #FFF;
+	font-size: 0.8em;
+	margin-right: 50px;
+	margin-top: 20px;
+}
+
+section .news .news2 p{
+	font-family: 'gbook';
+	color: #000;
+	font-size: 0.8em;
+	margin-top: 20px;
+}
+
+section .blog{
+	clear: both;
+}
+
+section .blog h2{
+	text-transform: uppercase;
+	font-family: 'gmedium';
+	color: #000;
+	text-align: center;
+	margin-top: 100px;
+	font-size: 1.9em;
+}
+
+section .blog .h3{
+	font-family: 'gbook';
+	color: #393639;
+	text-align: center;
+	margin-top: 75px;
+	font-size: 1.5em;
+}
+
+section .blog .col-3{
+	padding: 15px;
+	box-sizing: border-box;
+	margin-top: 50px;
+}
+
+section .blog .col-3 h3{
+	font-family: 'gmedium';
+	color: #14769F;
+	opacity: 0.9;
+	font-size: 1.1em;
+	margin-top: 15px;
+	text-align: center;
+}
+
+section .blog .col-3 p{
+	font-family: 'gbook';
+	color: #3D3D3D;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 0.9em;
+	margin-bottom: 100px;
+}
+
+section .quick{
+	clear: both;
+	background: #11749E;
+	width: 100%;
+	height: 350px;
+}
+
+section .quick .col-6{
+	padding: 20px;
+	box-sizing: border-box;
+	margin-top: 100px;
+}
+
+section .quick i{
+	color: #FFF;
+	font-size: 5em;
+}
+
+section .quick p{
+	font-family: 'gbook';
+	color: #FFF;
+	font-size: 0.9em;
+}
+
+section .key{
+	clear: both;
+	background: url('Images/07.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height: 700px;
+}
+
+section .key .margin{
+	width: 80%;
+	margin-top: 180px;
+}
+
+section .key h3{
+	font-family: 'gmedium';
+	color: #FFF;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+section .key p{
+	font-family: 'gbook';
+	color: #FFF;
+	font-size: 0.8em;
+	margin-top: 25px;
+}
+
+section .key img{
+	width: 300px;
+	margin-left: 100px;
+	margin-top: 80px;
+}
+
+section .key .button{
+	margin-top: 50px;
+	width: 100%;
+}
+
+section .key .button a{
+	text-transform: uppercase;
+	font-family: 'gmedium';
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+	padding: 7px 20px;
+	font-size: 0.9em;
+}
+
+section .key .button .a{
+	background: #11749E;
+	width: 75%;
+}
+
+section .key .button .b{
+	background: #11749E;
+	width: 80%;
+	margin-top: 15px;
+}
+
+section .key .button .c{
+	background: #11749E;
+	width: 85%;
+	margin-top: 15px;
+}
+
+section .key .button a:hover{
+	background: #1596CC;
+	transition: all .3s ease;
+}
+
+section .team{
+	clear: both;
+}
+
+section .team .col-3{
+	height: 400px;
+	padding: 15px;
+	box-sizing: border-box;
+	margin-top: 30px;
+	margin-bottom: 75px;
+}
+
+section .team h2{
+	text-align: center;
+	font-family: 'gmedium';
+	color: #000;
+	font-size: 1.9em;
+	margin-top: 100px;
+	text-transform: uppercase;
+}
+
+section .team .heading3{
+	text-align: center;
+	font-family: 'gbook';
+	color: #2E2E2E;
+	font-size: 	1.5em;
+	margin-top: 75px;
+}
+
+section .team .background1{
+	background: url('Images/09.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+}
+
+section .team .background2{
+	background: url('Images/10.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+}
+
+section .team .background3{
+	background: url('Images/11.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+}
+
+section .team .background4{
+	background: url('Images/12.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+}
+
+section .team .name{
+	background: #FFF;
+	position: relative;
+	top: 270px;	
+	margin-left: 40px;
+	width: 70%;
+	height: 50px;
+	text-align: center;
+}
+
+section .team .col-3 h3{
+	font-family: 'gmedium';
+	color: #11749E;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+
+section .team .col-3 p{
+	font-family: 'gmedium';
+	color: #000;
+	font-size: 0.8em;
+	padding-top: 5px;
+}
+
+section .contact{
+	clear: both;
+	background: url('Images/13.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height: 700px;
+}
+
+section .contact h2{
+	font-family: 'gmedium';
+	color: #FFF;
+	text-align: center;
+}
+
+section .contact .title{
+	padding-top: 75px;
+}
+
+section .contact .col-4{
+	box-sizing: border-box;
+	padding: 25px;
+	margin-top: 75px;
+}
+
+section .contact .col-12{
+	padding: 25px;
+}
+
+section .contact .col-4 input[type="text"]{
+	width: 100%;
+	background: transparent;
+	border: solid 1px #FFF;
+	padding: 13px 10px;
+	color: #FFF;
+	font-family: 'gbook';
+
+}
+
+section .contact .col-12 textarea{
+	height: 150px;
+	width: 100%;
+	background: transparent;
+	border: solid 1px #FFF;
+	padding: 13px 10px;
+	color: #FFF;
+	font-family: 'gbook';
+}
+
+section .contact .col-12 button{
+	background: #11749E;
+	width: 150px;
+	height: 45px;
+	border: solid 1px #11749E;
+	font-family: 'gmedium';
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	margin-top: 40px;
+}
+
+section .contact .col-12 button:hover{
+	transition: all .5s ease;
+	background: #1596CC;
+	border: solid 1px #1596CC;
+	cursor: pointer;
+}
+
+section .contact .col-12 form{
+	text-align: center;
+}
+
+footer{
+	background: #212121;
+	width: 100%;
+	height: 75px;
+}
+
+footer .left{
+	float: left;
+	margin-top: 30px;
+}
+
+footer p{
+	font-family: 'roboto';
+	color: #FFF;
+	font-size: 0.8em;
+}
+
+footer .right{
+	float: right;
+	margin-top: 30px;
+}
+
+footer a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+footer a:hover{
+	color: #11749E;
+	transition: all .3s ease;
+}
+
+@media screen and (max-width: 414px){
+	body{
+		font-size: 12px;
+		overflow-x: hidden;
+	}
+
+	header{
+		height: 500px;
+	}
+
+	header .content{
+		margin-top: 225px;
+	}
+
+	header .header-content .logo img{
+		width: 40px;
+		margin-top: 10px;
+	}
+
+	header .nav-collapse .social{
+		display: none;
+	}
+
+	.tetap{
+		padding: 0;
+	}
+
+	#menu{
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, .8);
+		height: 95px;
+		z-index: 99;
+	}
+
+	.nav-collapse ul{
+		background: rgba(0, 0, 0, .5);
+		width: 100%;
+		height: auto;
+		z-index: 99;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav-collapse ul a{
+		font-size: 1.3em;
+	}
+
+	.nav-collapse ul {
+  		margin: 0;
+ 		padding: 0;
+  		width: 100%;
+  		height: 240px;
+  		display: block;
+  		list-style: none;
+	}
+
+	.nav-collapse li {
+	  	width: 100%;
+	  	display: block;
+	  	padding: 10px 0px;
+	}
+
+	.js .nav-collapse {
+	  	clip: rect(0 0 0 0);
+	  	max-height: 0;
+	 	position: absolute;
+	 	display: block;
+	 	overflow: hidden;
+	 	zoom: 1;
+	}
+
+	@font-face {
+	  font-family: "responsivenav";
+	  src:url("../icons/responsivenav.eot");
+	  src:url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+	    url("../icons/responsivenav.ttf") format("truetype"),
+	    url("../icons/responsivenav.woff") format("woff"),
+	    url("../icons/responsivenav.svg#responsivenav") format("svg");
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+	.nav-toggle {
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+	  text-decoration: none;
+	  text-indent: -300px;
+	  position: relative;
+	  overflow: hidden;
+	  width: 60px;
+	  height: 55px;
+	  float: right;
+	  display: block;
+	  bottom: 17px;
+	  right: 30px;
+	}
+
+	.nav-toggle:before {
+	  color: #fff;
+	  font: normal 28px/55px "responsivenav";
+	  text-transform: none;
+	  text-align: center;
+	  position: absolute;
+	  font-size: 3em;
+	  content: "\2261";
+	  text-indent: 0;
+	  speak: none;
+	  width: 100%;
+	  left: 0;
+	  top: 0;
+	}
+
+	.nav-toggle.active:before {
+	  font-size: 3em;
+	  content: "\78";
+	}
+
+	header .nav-menu .wrapper{
+		width: 100%;
+	}
+
+	header .nav-collapse a:hover{
+		color: #11749E;
+		border: none;
+	}	
+
+	header .content h1{
+		font-size: 4em;
+	}
+
+	header .content h3{
+		font-size: 0.55em;
+	} 
+
+	section .agency{
+		height: 1300px;
+	}
+
+	section .agency .col-3{
+		width: 100%;
+	}
+
+	section .agency h2{
+		font-size: 1.5em;
+	}
+
+	section .agency .title{
+		margin-top: 25px;
+	}
+
+	section .agency h3{
+		font-size: 1.1em;
+	}
+
+	section .agency p{
+		font-size: 1.2em;
+	}
+
+	section .news .col-6{
+		width: 100%;
+	}
+
+	section .news img{
+		height: 300px;
+	}
+
+	section .news1 img{
+		margin-top: 50px;
+	}
+
+	section .news .news1 .date, section .news .news2 .date{
+		font-size: 0.9em;
+	}
+
+	section .news .news1 h3, section .news .news2 h3{
+		font-size: 1.7em;
+	}
+
+	section .news .news1 p, section .news .news2 p{
+		font-size: 0.9em;
+	}
+
+	section .blog h2{
+		margin-top: 300px;
+		font-size: 2.1em;
+	}
+
+	section .blog .h3{
+		margin-top: 50px;
+		font-size: 1.3em;
+	}
+
+	section .blog .col-3{
+		padding: 15px;
+		margin-top: 0;
+		width: 100%;
+	}
+
+	section .blog #img1{
+		margin-top: 75px;
+	}
+
+	section .blog .col-3 h3{
+		font-size: 1.3em;
+	}
+
+	section .blog .col-3 p{
+		font-size: 1em;
+	}
+
+	section .quick{
+		height: 315px;
+	}
+
+	section .quick .col-6{
+		padding: 0;
+		margin-top: 50px;
+		width: 100%;
+	}
+
+	section .quick i{
+		font-size: 6.7em;
+	}
+
+	section .quick p{
+		margin-left: 40px;
+	}
+
+	section .key{
+		height: 800px;
+	}
+
+	section .key .margin{
+		margin-top: 100px;
+	}
+
+	section .key .col-6{
+		width: 100%;
+	}
+
+	section .key h3{
+		font-size: 1.9em;
+	}
+
+	section .key p{
+		font-size: 0.95em;
+	}
+
+	section .key img{
+		width: 60%;
+		margin-left: 65px;
+		margin-top: 50px;
+	}
+
+	section .team .col-3{
+		margin: 0;
+		width: 100%;
+	}
+
+	section .team h2{
+		font-size: 2.1em;
+	}
+
+	section .team .heading3{
+		font-size: 	1.3em;
+		margin-top: 50px;
+	}
+
+	section .team .background1{
+		margin-top: 30px;
+	}
+
+	section .contact{
+		height: 750px;
+	}
+
+	section .contact .title{
+		padding-top: 5px;
+		padding-bottom: 60px;
+	}
+
+	section .contact .col-4{
+		padding: 10px;
+		margin: 0;
+		width: 100%;
+	}
+
+	section .contact .col-12{
+		padding: 10px;
+	}
+
+	section .contact .col-12 textarea{
+		margin-top: 10px;
+	}
+
+	footer .left{
+		float: none;
+		margin-top: 0px;
+		padding-top: 20px;
+	}
+
+	footer p{
+		font-size: 0.9em;
+		text-align: center;
+	}
+
+	footer .right{
+		float: none;
+		margin-top: 7px;
+	}
+}
